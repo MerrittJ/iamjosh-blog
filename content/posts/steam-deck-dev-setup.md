@@ -4,8 +4,8 @@ title = "Setting up a development environment on the Steam Deck"
 description = ""
 slug = "setting-up-development-environment-on-Steam-Deck"
 authors = []
-tags = []
-categories = ['steam-deck']
+tags = ['steam-deck']
+categories = []
 externalLink = ""
 series = []
 +++

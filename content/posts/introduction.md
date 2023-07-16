@@ -27,8 +27,8 @@ So I buy the Q3 2022 Steam Deck. It arrives and I love it. My love of gaming is 
 ## Steam Deck Specifics
 When first reading about Steam Deck's desktop environment, you'll quickly find out that most of the OS is read-only and only the `/home` and `/etc` directories are writable. This is because the Steam Deck uses A/B booting, where there are two versions of the underlying SteamOS (based on Arch). At any OS upgrade, one is updated before the other and if the update is successful, the Deck loads that newer partition on next reboot. The now old partition is (mostly) wiped clean. This makes the SteamOS very stable on the Steam Deck but unfortunately means that most of the filesystem is kept as read-only and unlocking it all to be writable doesn't change the fact that everything outside `/home` and `/etc` is lost between OS updates.
 
-So the reality is that if I want to continue using SteamOS, I can't install anything that wants to use `/bin` or `/lib`, making installs via `brew` or other normal package managers inconvenient.
+So the reality is that if I want to continue using SteamOS, I can't install anything that wants to use `/bin` or `/lib`, making installs via `brew` or other normal package managers inconvenient. This is just the beginning of the set up...
 
 Fortunately there are many clever Linux users and tinkerers out there that have paved the way to making the most of the Steam Deck's locked-down system. I have different requirements to most of them, wanting to set up a development environment for JS and general web-dev activities, and I found I have just enough experience in tuning their methods to my vision that I feel I can pass on this knowledge to others in similar situations.
 
-And here we are, the end of me explaining why I started this blog and the beginning of the
+I'll also write about other bits and pieces as they pop up.

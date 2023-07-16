@@ -1,0 +1,19 @@
+baseURL = 'https://blog.iamjosh.fyi/'
+languageCode = 'en'
+title = "I Am Josh's Blog"
+theme = 'poison'
+since = "2023"
+
+[params]
+  brand = "I Am Josh's Blog"
+  brand_image = "images/think.png"
+  favicon = ""
+
+  menu = [
+    {Name = "About", URL = "/about/"},
+    {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 5},
+  ]
+
+  linkedin_url = "https://www.linkedin.com/in/joshvmerritt/"
+  github_url = "https://github.com/MerrittJ"
+

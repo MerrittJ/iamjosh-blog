@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I Am Josh&#39;s Blog</title>
+    <link>https://blog.iamjosh.fyi/</link>
+    <description>Recent content on I Am Josh&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jul 2023 20:22:38 +0100</lastBuildDate><atom:link href="https://blog.iamjosh.fyi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up a development environment on the Steam Deck</title>
+      <link>https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/</link>
+      <pubDate>Sun, 16 Jul 2023 20:22:38 +0100</pubDate>
+      
+      <guid>https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/</guid>
+      <description>Introduction This is a short tutorial on how to quickly get a Steam Deck ready for developing, with some gentle bias towards setting things up for developing websites or JavaScript apps (as that&amp;rsquo;s my background).
+The Steam Deck filesystem is almost entirely read-only. Unlocking it to be writable isn&amp;rsquo;t the fix because of the A/B partitions used by SteamOS; writes to a read-only area will not persist between OS updates. Fortunately, we can get around this by working entirely within the writable directories /home and /etc.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://blog.iamjosh.fyi/posts/introduction/</link>
+      <pubDate>Sun, 16 Jul 2023 14:36:50 +0100</pubDate>
+      
+      <guid>https://blog.iamjosh.fyi/posts/introduction/</guid>
+      <description>A Dream I&amp;rsquo;m a software engineer, a casual gamer, and a film enjoyer. This makes for a lot of screentime. At 1700, I would log off my work laptop and deftly change the monitor/mouse/keyboard to my PC. When I know what hobby I want to pursue, I can get straight to it, but in those phases where I &amp;ldquo;have all these games but don&amp;rsquo;t know what to play&amp;rdquo; or I can&amp;rsquo;t stop scrolling through my Letterboxd watchlist feeling uninspired, the default state is to be browsing.</description>
+    </item>
+    
+  </channel>
+</rss>

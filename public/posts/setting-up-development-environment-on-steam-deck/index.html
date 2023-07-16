@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.11d62625e7495f8147fccf5d08f37bded574a50c4508c235cc666848567d99ab.js"></script>
+
+
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" href=/favicon.png>
+
+    
+    
+
+
+
+
+
+  
+ 
+
+ 
+
+
+  
+  
+  
+ 
+
+
+
+  
+  
+    
+  
+  
+    
+  
+
+
+
+
+<title itemprop="name">I Am Josh&#39;s Blog - Setting up a development environment on the Steam Deck</title>
+<meta property="og:title" content=I&#32;Am&#32;Josh&#39;s&#32;Blog&#32;-&#32;Setting&#32;up&#32;a&#32;development&#32;environment&#32;on&#32;the&#32;Steam&#32;Deck />
+<meta name="twitter:title" content=I&#32;Am&#32;Josh&#39;s&#32;Blog&#32;-&#32;Setting&#32;up&#32;a&#32;development&#32;environment&#32;on&#32;the&#32;Steam&#32;Deck />
+<meta itemprop="name" content=I&#32;Am&#32;Josh&#39;s&#32;Blog&#32;-&#32;Setting&#32;up&#32;a&#32;development&#32;environment&#32;on&#32;the&#32;Steam&#32;Deck />
+<meta name="application-name" content=I&#32;Am&#32;Josh&#39;s&#32;Blog&#32;-&#32;Setting&#32;up&#32;a&#32;development&#32;environment&#32;on&#32;the&#32;Steam&#32;Deck />
+<meta property="og:site_name" content="I Am Josh&#39;s Blog" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/" />
+<link rel="canonical" href="https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/" itemprop="url" />
+<meta name="url" content="https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/" />
+<meta name="twitter:url" content="https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/" />
+<meta property="og:url" content="https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/" />
+
+
+
+
+
+<meta property="og:updated_time" content=16007-16-08T722:38:23&#43;0100 />
+
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='https://blog.iamjosh.fyi/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+<meta property="fb:admins" content="" />
+
+
+<meta name="apple-mobile-web-app-title" content="I Am Josh&#39;s Blog" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+ 
+
+
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="" />
+<meta property="og:article:published_time" content=16007-16-08T722:38:23&#43;0100 />
+<meta property="article:published_time" content=16007-16-08T722:38:23&#43;0100 />
+
+
+
+
+
+<script defer type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Setting up a development environment on the Steam Deck",
+    "author": {
+      "@type": "Person",
+      "name": "https:\/\/github.com\/MerrittJ"
+    },
+    "datePublished": "2023-07-16",
+    "description": "",
+    "wordCount":  697 ,
+    "mainEntityOfPage": "True",
+    "dateModified": "2023-07-16",
+    "image": {
+      "@type": "imageObject",
+      "url": ""
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "I Am Josh\u0027s Blog",
+      "logo": {
+        "@type": "imageObject",
+        "url": ""
+      }
+    }
+  }
+</script>
+
+
+
+<meta name="generator" content="Hugo 0.115.3">
+
+
+    
+    
+
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.178e339ccb9acabffeebf9adbb0bb23c1ec0b72a2a50edee18a5007d4d5a68aa.css">
+
+
+    
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5a5a5a;
+        --link-color: #268bd2;
+        --date-color: #515151;
+        --table-border-color: #E5E5E5;
+        --table-stripe-color: #F9F9F9;
+        --code-color: #bf616a;
+        --code-background-color: #E5E5E5;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #eee;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9d9d9d;
+        --link-color: #268bd2;
+        --date-color: #9a9a9a;
+        --table-border-color: #515151;
+        --table-stripe-color: #202020;
+        --code-color: #ff7f7f;
+        --code-background-color: #393D47;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+</style>
+
+</head>
+
+    <body class="">
+        <div class="wrapper">
+            <aside class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="light-dark" align="right">
+    <button class="btn-light-dark" title="Toggle light/dark mode">
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+</div>
+
+        <div class="sidebar-about">
+    <h1 class="brand">
+        
+            <a href="https://blog.iamjosh.fyi/">
+                <img src="images/think.png" alt="brand image">
+            </a>
+        
+        
+            <a href="https://blog.iamjosh.fyi/">
+                <h1>I Am Josh&#39;s Blog</h1>
+            </a>
+        
+    </h1>
+    <p class="lead">
+    
+    </p>
+</div>
+
+        <nav>
+    <ul class="sidebar-nav">
+
+        
+        
+        
+        
+            
+
+            
+                
+            
+            
+                
+            
+                
+            
+        
+        
+            
+
+            
+                
+                    <li class="heading">
+                        <a href="/posts/">Posts</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/">Setting up a development environment on the Steam Deck</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="https://blog.iamjosh.fyi/posts/introduction/">Introduction</a>
+                            </li>
+                        
+                    
+                
+            
+            
+                
+            
+                
+            
+        
+
+    </ul>
+</nav>
+
+        
+    <a target="_blank" class="social" title="GitHub" href="https://github.com/MerrittJ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099C.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647c.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091a2.026 2.026 0 0 1-.872-.39a1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156a.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15c.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813c.282.186.566.28.852.28c.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234a5.314 5.314 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365c-.177-.564-.266-1.215-.266-1.952c0-1.049.342-1.942 1.027-2.68c-.32-.788-.29-1.673.091-2.652c.252-.079.625-.02 1.119.175c.494.195.856.362 1.086.5c.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143c.39.98.424 1.864.103 2.653c.685.737 1.028 1.63 1.028 2.68c0 .737-.089 1.39-.267 1.957c-.177.568-.407 1.023-.689 1.366a3.65 3.65 0 0 1-1.053.865c-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064c.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099c.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+        </svg>
+    </a>
+
+
+
+    <a target="_blank" class="social" title="LinkedIn" href="https://www.linkedin.com/in/joshvmerritt/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p class="footnote">
+powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
+    <br>
+    &copy; 2023 I Am Josh&#39;s Blog. All rights reserved.
+</p>
+
+  </div>
+</aside>
+
+            <main class="content container">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="https://blog.iamjosh.fyi/posts/setting-up-development-environment-on-steam-deck/">Setting up a development environment on the Steam Deck</a>
+    </h1>
+    
+        <time datetime="2023-07-16T20:22:38&#43;0100" class="post-date">
+            July 16, 2023
+        </time>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+  <h1 id="introduction">Introduction</h1>
+<p>This is a short tutorial on how to quickly get a Steam Deck ready for developing, with some gentle bias towards setting things up for developing websites or JavaScript apps (as that&rsquo;s my background).</p>
+<p>The Steam Deck filesystem is almost entirely read-only. Unlocking it to be writable isn&rsquo;t the fix because of the A/B partitions used by SteamOS; writes to a read-only area will not persist between OS updates. Fortunately, we can get around this by working entirely within the writable directories <code>/home</code> and <code>/etc</code>. How do we ensure everything we install is saved to these locations? Distrobox!</p>
+<p>I stand on the shoulders of giants, namely Ian Wootten, who has excellent videos and articles on getting the Steam Deck ready to develop, and Luca di Maio with the Distrobox tool and guides. I want to combine and add a few extra steps to these tutorials in case anyone (like me) got stuck.</p>
+<p>In this tutorial, we will:</p>
+<ul>
+<li><a href="#distrobox">Install Distrobox</a>
+</li>
+<li><a href="#vscode">Install VSCode</a>
+</li>
+<li><a href="#extras">(Optional) Install some extra nice-to-have tools for developing</a>
+</li>
+</ul>
+<h1 id="distrobox">Distrobox</h1>
+<p>Distrobox is an application that lets us run Linux distributions in containers, accessible by command line. This is useful because we can install Distrobox to <code>/home</code> then when we run a Linux distro, what the distro thinks is its <code>/bin</code>/<code>/lib</code>/et cetera is actually all within <code>/home</code>. This fixes the main issue of any installer wanting to write to a read-only part of the SteamOS filesystem.
+Distrobox uses Podman or Docker under the hood but I opted for Podman. They&rsquo;re pretty interchangeable but I&rsquo;ve had fewer issues with Podman than Docker in my career.</p>
+<p>So, let&rsquo;s get into it. opening up Konsole (terminal for the KDE desktop)</p>
+<ol>
+<li>
+<p>Open up Konsole (terminal for the KDE desktop)</p>
+</li>
+<li>
+<p>Set a password for the default user with <code>passwrd</code>. This will let us use <code>sudo</code> later.</p>
+</li>
+<li>
+<p>Run the following commands</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sh -s -- --prefix ~/.local
+</span></span><span style="display:flex;"><span>curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/extras/install-podman | sh -s -- --prefix ~/.local
+</span></span></code></pre></div><p>This installs Distrobox and Podman into the <code>/home/.local</code> directory</p>
+</li>
+<li>
+<p>Add the bins to your PATH (in your .bashrc/.zshrc or equivalent)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$PATH:$HOME/.local/bin
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$PATH:$HOME/.local/podman/bin
+</span></span></code></pre></div></li>
+<li>
+<p>Add the Podman bin to the ~/.distroboxrc file (create one if it doesn&rsquo;t exist yet)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$PATH:$HOME/.local/podman/bin
+</span></span></code></pre></div><p>This lets us run Distrobox with Podman from the terminal now.</p>
+</li>
+<li>
+<p>Also add an xhost command to <strong>both</strong> the .bashrc or equivalent file <strong>and</strong> .distroboxrc file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xhost +SI:localuser:$USER
+</span></span></code></pre></div><p>This lets us run graphical applications from Distrobox</p>
+</li>
+<li>
+<p>Create your desired Linux container. I used Ubuntu 22:10</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>distrobox create -i ubuntu:22.10
+</span></span></code></pre></div><p>At this stage, it&rsquo;s worth verifying the create worked by entering the container</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>distrobox enter ubuntu-22-10
+</span></span></code></pre></div></li>
+</ol>
+<p>Now we have Distrobox installed and we can use it with an Ubuntu distro. Inside this distro we can install anything we want and it will persist between SteamOS updates.</p>
+<h1 id="vscode">VSCode</h1>
+<p>Everyone has their own preferences for IDE but I&rsquo;m enjoying VSCode. The following steps will probably be relevant to your preferred IDE.</p>
+<ol>
+<li>Download the latest VSCode .deb file from Microsoft</li>
+<li>While inside your new container and in the home directory, install VSCode
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install ./Downloads/code_1.76.2-1678817801_amd64.deb
+</span></span></code></pre></div></li>
+<li>Export this newly installed app to your host with
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>distrobox-export --app code
+</span></span></code></pre></div>After a moment, the new VSCode app should be available to see in your main list of programs/apps. Open it, verifying the title says something like &ldquo;Visual Studio Code (on Ubuntu 22:10)&rdquo;</li>
+</ol>
+<h1 id="extras">Extras</h1>
+<p>This section is for other tools I installed after setting up the above. These are truly preferences and specific to how and what I develop.</p>
+<h2 id="nvm">NVM</h2>
+<p>Installs by <code>curl</code></p>
+<ol>
+<li>
+<p>Download</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+</span></span></code></pre></div></li>
+<li>
+<p>The above adds NVM to your PATH automatically so open a new terminal and run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nvm install node
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="git">Git</h2>
+<p>Installs by <code>apt-get</code>. Remember we&rsquo;re working in a non-SteamOS distro now.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install git
+</span></span></code></pre></div><h2 id="homebrew">Homebrew</h2>
+<p>Requires Git, installs by <code>curl</code></p>
+<ol>
+<li>Download
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div></li>
+<li>Run the commands it prints at the end. These depend on your distro but if you use an Ubuntu container like me, run the following
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install make build-essential
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="terraform">Terraform</h2>
+<p>Requires Homebrew, installs by Homebrew</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew tap hashicorp/tap
+</span></span><span style="display:flex;"><span>brew install hashicorp/tap/terraform
+</span></span></code></pre></div><h1 id="references">References:</h1>
+<ul>
+<li>Distrobox - <a href="https://www.ianwootten.co.uk/2022/11/30/how-to-setup-distrobox-on-the-steam-deck/" target="_blank">https://www.ianwootten.co.uk/2022/11/30/how-to-setup-distrobox-on-the-steam-deck/</a>
+ (up to the Pyenv section)</li>
+<li>VSCode: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
+</li>
+<li>VSCode + Distrobox - <a href="https://github.com/89luca89/distrobox/blob/main/docs/posts/integrate_vscode_distrobox.md" target="_blank">https://github.com/89luca89/distrobox/blob/main/docs/posts/integrate_vscode_distrobox.md</a>
+</li>
+<li>NVM - <a href="https://github.com/nvm-sh/nvm#installing-and-updating" target="_blank">https://github.com/nvm-sh/nvm#installing-and-updating</a>
+</li>
+</ul>
+
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="https://blog.iamjosh.fyi/posts/introduction/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Introduction</a>
+        
+	    
+    
+</div>
+
+  
+</div>
+            </main>
+            
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#nvm">NVM</a></li>
+    <li><a href="#git">Git</a></li>
+    <li><a href="#homebrew">Homebrew</a></li>
+    <li><a href="#terraform">Terraform</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
+        </div>
+    </body>
+</html>
